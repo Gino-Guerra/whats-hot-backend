@@ -3,8 +3,6 @@ import  cors  from "cors"
 
 import express from "express"
 
-import "dotenv/config"
-
 import { onRequest } from "firebase-functions/v2/https"
 
 // import { createUser, login } from "./src/users.js"
@@ -13,6 +11,9 @@ import { onRequest } from "firebase-functions/v2/https"
 
 import { createGame, getAllGames } from "./src/whatshot.js"
 
+import * as admin from 'firebase-admin';
+
+admin.initializeApp;
 
 const app = express()
 
